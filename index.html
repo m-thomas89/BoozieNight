@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+   <title>BoozieNight</title>
+ </head>
+ <body>
+<!-- Main container -->
+<nav id="navbar-styles" class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="image.png" width=".5rem" height=".5rem">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Documentation
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+ <div class="container">
+     <div class="columns" class="left-right-column">
+     <div class="column is-one-quarter" style="background: rgb(46, 207, 207)">
+        <div class="field">
+         <p class="control">
+         <input id= "movie-search" class="input" type="text" placeholder="type movie title here">
+         <!-- <span class="icon is-small is-left">
+           <i class="fas fa-envelope"></i> -->
+         <!-- </span>
+         <span class="icon is-small is-right">
+           <i class="fas fa-check"></i>
+         </span> -->
+       </p>
+     </div>
+     <div class="field">
+       <p class="control">
+         <button id="movie-search-submit" class="button is-info is medium is-fullwidth">
+           Search Movies
+         </button>
+       </p>
+     </div>
+     <div class="tile is-ancestor">
+       <div id="movie-search-info" class="tile">
+      
+       </div>
+     </div>
+   </div>
+   <div class="column is-three-quarters" id="right-column">
+     <!-- display -->
+       <section id="question-container" class="hero is-primary is-medium" style="background-color: rgba(130, 48, 207, 0.993)">
+           <div id="hidethis" class="hero-body">
+             <div id="main-content-div" class="container">
+               <div class = "columns">
+                 <div class = "column is one-half">
+                <h2 class="title">
+                </h2>
+                  <div class="buttons">
+                  </div>
+                  </div>
+                  <div id="boozienight-logo" class="column is one-half">
+                  </div>
+                  </div>
+             </div>
+           </div>
+         </section>
+         <!--  -->
+         <section id="top-ten-movies" class="hero is-dark" style="background-color: rgb(214, 57, 141);">
+           <div class="hero-body">
+             <div class="container" id="top-ten-container">
+               <h1 class="title">
+                 TOP FIVE MOVIES
+               </h1>
+               <div id="top-ten-movies">
+                <div class="columns">
+                  <div class="column column is-one-fifth" id="moviePoster1"> 
+                  </div>
+                  <div class="column column is-one-fifth" id="moviePoster2">
+                  </div>
+                  <div class="column column is-one-fifth" id="moviePoster3">
+                    
+                  </div>
+                  <div class="column column is-one-fifth" id="moviePoster4">
+                  </div>
+                  <div class="column column is-one-fifth" id="moviePoster5">
+                  </div>
+                </div>
+               </div>
+             </div>
+           </div>
+         </section>
+   </div>
+   </div>
+</div>
+ </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js">
+      
+    </script>
+    
+</body>
+</html>
